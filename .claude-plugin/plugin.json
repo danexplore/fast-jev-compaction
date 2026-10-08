@@ -64,6 +64,12 @@
       "description": "Assistant replies at least this long can be abridged to their opening and closing when Jev says the full wording is no longer needed. 0 never abridges.",
       "default": 2000
     },
+    "textOnlyAfter": {
+      "type": "number",
+      "title": "Text-only after",
+      "description": "Messages older than the last N are kept as text and tool calls only, dropping their screenshots, thinking and attached reminders. 0 keeps every message whole.",
+      "default": 20
+    },
     "model": {
       "type": "string",
       "title": "Jev model",

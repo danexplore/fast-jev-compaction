@@ -126,6 +126,7 @@ put it in a source file.
 | `truncateHeadChars` | `300` | Characters of a dropped tool result retained before its note |
 | `injectedMinChars` | `1000` | Injected text blocks at least this long are judged by Jev; `0` leaves message text alone |
 | `replyMinChars` | `2000` | Assistant replies at least this long may be abridged to head and tail; `0` never abridges |
+| `textOnlyAfter` | `20` | Claude Code hook only: messages older than the last N lose their screenshots, thinking and attached reminders; `0` keeps them whole |
 
 `result.stats` reports message and character counts before and after, the
 per-reason decision counts (tool calls and text blocks; `result.textDecisions`
